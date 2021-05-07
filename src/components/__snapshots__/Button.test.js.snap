@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render with color primary and variant link 1`] = `[Function]`;
+
+exports[`render with color primary and variant outlined 1`] = `[Function]`;
+
+exports[`renders with color danger 1`] = `[Function]`;
+
+exports[`renders with color default 1`] = `[Function]`;
+
+exports[`renders with color primary 1`] = `[Function]`;
+
+exports[`renders with variant default 1`] = `[Function]`;
+
+exports[`renders with variant link 1`] = `[Function]`;
+
+exports[`renders with variant outlined 1`] = `[Function]`;
