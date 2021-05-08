@@ -1,6 +1,6 @@
 import React from "react";
 
-import { render, fireEvent } from "../test-utils";
+import { render, fireEvent } from "../../test-utils";
 import Button, { ButtonColors, ButtonsVariants } from "./Button";
 
 test("renders a text", () => {
