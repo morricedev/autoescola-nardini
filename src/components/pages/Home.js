@@ -3,13 +3,53 @@ import React from "react";
 import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
-import HeroImage from "../../assets/hero.jpg";
 import Feature from "../atoms/Feature";
 import Grid from "../atoms/Grid";
-import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import Section from "../molecules/Section";
-import AboutVideo from "../../assets/about.mp4";
 import Footer from "../organisms/Footer";
+import ProductGrid from "../organisms/ProductGrid";
+import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
+
+import HeroImage from "../../assets/hero.jpg";
+import ServImage01 from "../../assets/serv-01.jpg";
+import ServImage02 from "../../assets/serv-02.jpg";
+import ServImage03 from "../../assets/serv-03.jpg";
+import ServImage04 from "../../assets/serv-04.jpg";
+import ServImage05 from "../../assets/serv-05.jpg";
+import AboutVideo from "../../assets/about.mp4";
+
+const products = [
+  {
+    id: 1,
+    title: "1° Habilitação Carro e Moto",
+    summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: ServImage01,
+  },
+  {
+    id: 2,
+    title: "1° Habilitação Carro",
+    summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: ServImage02,
+  },
+  {
+    id: 3,
+    title: "1° Habilitação Moto",
+    summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: ServImage03,
+  },
+  {
+    id: 4,
+    title: "Mudança de Categoria Caminhão",
+    summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: ServImage04,
+  },
+  {
+    id: 5,
+    title: "Aulas Avulsas",
+    summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    image: ServImage05,
+  },
+];
 
 const Home = () => (
   <>
@@ -51,6 +91,7 @@ const Home = () => (
       <Heading>
         <h2>Conheça nossos serviços</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
 
     <Section>
