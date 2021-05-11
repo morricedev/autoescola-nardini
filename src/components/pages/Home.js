@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 
 import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";
@@ -8,7 +9,7 @@ import Grid from "../atoms/Grid";
 import Section from "../molecules/Section";
 import Footer from "../organisms/Footer";
 import ProductGrid from "../organisms/ProductGrid";
-import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
+import Accordion, { AccordionGroup } from "../atoms/Accordion/index";
 
 import HeroImage from "../../assets/hero.jpg";
 import ServImage01 from "../../assets/serv-01.jpg";
@@ -120,6 +121,35 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu renovo minha CNH?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          tenetur? Incidunt iure a totam magni, id blanditiis repudiandae, alias
+          itaque excepturi quasi fugiat voluptatibus. Animi eligendi facere
+          earum sed voluptate? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ducimus, beatae aspernatur at qui nihil maiores
+          omnis numquam, culpa temporibus quod reprehenderit deserunt sed vel
+          sint tempore odit dignissimos iste. Culpa?
+        </Accordion>
+        <Accordion title="Como faço a mudança de categoria?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          tenetur? Incidunt iure a totam magni, id blanditiis repudiandae, alias
+          itaque excepturi quasi fugiat voluptatibus. Animi eligendi facere
+          earum sed voluptate? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ducimus, beatae aspernatur at qui nihil maiores
+          omnis numquam, culpa temporibus quod reprehenderit deserunt sed vel
+          sint tempore odit dignissimos iste. Culpa?
+        </Accordion>
+        <Accordion title="Fui multado, e agora?">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          tenetur? Incidunt iure a totam magni, id blanditiis repudiandae, alias
+          itaque excepturi quasi fugiat voluptatibus. Animi eligendi facere
+          earum sed voluptate? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ducimus, beatae aspernatur at qui nihil maiores
+          omnis numquam, culpa temporibus quod reprehenderit deserunt sed vel
+          sint tempore odit dignissimos iste. Culpa?
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
