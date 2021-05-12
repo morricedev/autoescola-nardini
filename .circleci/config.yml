@@ -1,0 +1,17 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.3.0
+
+jobs:
+  setup:
+    docker:
+      - image: circleci/node:14.17.0-browsers
+    steps:
+      - checkout
+      - node/install-npm
+      - run: node --version
+
+workflow:
+ci:
+  - setup
