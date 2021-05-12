@@ -13,6 +13,6 @@ jobs:
       - run: node --version
 
 workflows:
-ci:
-  jobs:
-    - setup
+  ci:
+    jobs:
+      - setup
