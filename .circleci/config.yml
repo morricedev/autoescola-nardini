@@ -12,6 +12,6 @@ jobs:
       - node/install-npm
       - run: node --version
 
-workflow:
+workflows:
 ci:
   - setup
