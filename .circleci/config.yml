@@ -16,5 +16,5 @@ jobs:
 
 workflows:
   ci:
-    tests:
+    jobs:
       - setup
