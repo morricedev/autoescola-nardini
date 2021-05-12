@@ -9,10 +9,10 @@ module.exports = {
   ],
   addons: [
     "@storybook/addon-links",
+    "@storybook/addon-docs",
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/addon-viewport",
-    "@storybook/addon-docs",
     "@storybook/addon-knobs",
   ],
 };
