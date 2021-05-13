@@ -15,7 +15,7 @@ test("renders with title", () => {
 test("renders whithout children", () => {
   render(<Accordion>{text}</Accordion>);
 
-  expect(screen.queryByText(text)).not.toBeInTheDocument;
+  expect(screen.queryByText(text)).not.toBeInTheDocument();
 });
 
 test("triggers onChange when it is clicked", async () => {
@@ -33,7 +33,7 @@ describe("when is controlled", () => {
     test("renders with children", () => {
       render(<Accordion open>{text}</Accordion>);
 
-      expect(screen.getByText(text)).toBeInTheDocument;
+      expect(screen.getByText(text)).toBeInTheDocument();
     });
 
     test("triggers onChange when it is clicked", async () => {
@@ -57,7 +57,7 @@ describe("when is controlled", () => {
         </Accordion>
       );
 
-      expect(screen.queryByText(text)).not.toBeInTheDocument;
+      expect(screen.queryByText(text)).not.toBeInTheDocument();
     });
 
     test("call default onChange when it is clicked", async () => {
@@ -70,7 +70,7 @@ describe("when is controlled", () => {
     test("renders without children", () => {
       render(<Accordion open={false}>{text}</Accordion>);
 
-      expect(screen.queryByText(text)).not.toBeInTheDocument;
+      expect(screen.queryByText(text)).not.toBeInTheDocument();
     });
   });
 });
