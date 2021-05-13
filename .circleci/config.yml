@@ -17,8 +17,22 @@ jobs:
       - run: npm run cover
       - codecov/upload:
           file: coverage/*.json
+  versioning:
+    docker:
+      - image: circleci/node:14.15.4
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version morricedev autoescola-nardini main
 
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/
