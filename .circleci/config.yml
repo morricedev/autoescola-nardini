@@ -11,14 +11,37 @@ jobs:
     steps:
       - checkout
       - node/install-npm
-      - run: node --version
+      - run:
+          name: Show node version
+          command: node --version
       - node/install-packages
-      - run: npm run lint
-      - run: npm run cover
+      - run:
+          name: Run lint check
+          command: npm run lint
+      - run:
+          name: Run unit tests with coverage
+          command: npm run cover
       - codecov/upload:
           file: coverage/*.json
+      - run:
+          name: Publish to Chromatic
+          command: npm run chromatic
+  versioning:
+    docker:
+      - image: circleci/node:14.15.4
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version morricedev autoescola-nardini main
 
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/
