@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import ProductType from "../../types/ProductType";
+import ProductType from "../../models/types/ProductType";
 
 import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";
